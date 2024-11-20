@@ -62,17 +62,31 @@ class _RecentSearchState extends State<RecentSearch> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        items.title.toString(),
-                        style: regularFont.copyWith(fontSize: 10.sp),
+                      SizedBox(
+                        width: 120.w,
+                        child: Text(
+                          items.title.toString(),
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: Color(0xFF6F6D6D),
+                            fontFamily: 'Poppins',
+                            fontSize: 10.sp,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ),
                       SizedBox(
                         height: 8.h,
                       ),
                       Text(
                         items.description.toString(),
-                        style: regularFont.copyWith(
-                            fontSize: 12.sp, color: Colors.black),
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          color: Color(0xFF6F6D6D),
+                          fontFamily: 'Poppins',
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
                       )
                     ],
                   ),

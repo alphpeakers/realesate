@@ -19,7 +19,7 @@ TextStyle mediumFont = TextStyle(
 
 //Semibold
 TextStyle semiBoldFont = TextStyle(
-    color: Colors.white,
+    color: Colors.black,
     fontWeight: FontWeight.w600,
     fontFamily: 'Poppins',
     fontSize: 25.sp);

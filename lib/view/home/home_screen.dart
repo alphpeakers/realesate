@@ -4,7 +4,6 @@ import 'package:realestate/util/style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:realestate/view/home/dashboard.dart';
 import 'package:realestate/view/widget/asistance.dart';
-
 import '../widget/agents.dart';
 import '../widget/legal.dart';
 import '../widget/payrent.dart';
@@ -51,7 +50,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Text(
                         'Find Your best\nproperity',
-                        style: semiBoldFont,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'Poppins',
+                            fontSize: 25.sp),
                       ),
                       SizedBox(
                         width: 25.w,
